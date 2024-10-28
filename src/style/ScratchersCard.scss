@@ -1,0 +1,43 @@
+
+  .ScratchersCardWrapper{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+
+
+  .scratch-container{
+    width: 600px;
+    height: 450px;
+    background-color: blue;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .scratch-card {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+
+  }
+  canvas {
+    position: absolute;
+    cursor: grabbing;
+  } 
+
+  .fade-out {
+    opacity: 1;
+    transition: opacity 0.5s ease-out; /* 0.5s czas przejścia */
+}
+
+.fade-out.hidden {
+    opacity: 0; /* Ukrycie elementu */
+}

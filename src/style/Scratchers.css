@@ -1,0 +1,4 @@
+.ScratchersWrapper{
+    display: flex;
+    flex-direction: row;
+}

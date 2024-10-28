@@ -1,0 +1,99 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(0, 22, 58);
+    color: white;
+}
+
+/* Lewa sekcja - Logo i linki */
+.navBar .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.navBar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.navBar .logo img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.navBar .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navBar .nav-links li {
+    display: inline-block;
+}
+
+.navBar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBar .nav-links a:hover {
+    color: #ddd;
+}
+
+/* Prawa sekcja - Bilans, Imię użytkownika, Awatar */
+.navBar .right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Bilans i imię użytkownika */
+.navBar .user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+}
+
+.wallet-icon {
+    font-size: 18px;
+    color: white;
+    margin-right: 5px; /* Odstęp między ikoną a balansem */
+}
+
+
+.navBar .user-balance {
+    font-size: 18px;
+    color: #fff;
+}
+
+.navBar .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Avatar */
+.navBar .avatar {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.navBar .avatar .user-icon {
+    font-size: 24px; /* Rozmiar ikony */
+    color: #333;     /* Kolor ikony */
+}

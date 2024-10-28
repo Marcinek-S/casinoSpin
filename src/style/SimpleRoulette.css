@@ -1,0 +1,67 @@
+.balanceWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.prizeResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prizeResult img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.simpleRouletteWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.simpleRouletteWrapper .simpleRoulette {
+  display: flex;
+  flex-direction: row;
+}
+.simpleRouletteWrapper .prizeCard {
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.simpleRouletteWrapper .prizeCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.prizeResultWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.prizeResultWrapper button {
+  width: 50%;
+  height: 50px;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(0, 22, 58);
+  border: none;
+}
+
+.prizeResultWrapper button:hover {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgb(34, 109, 195) 0%, rgb(0, 22, 58) 75%);
+  box-shadow: 0px 5px 4px 0px rgb(34, 109, 195);
+}
+
+.prizeCard.active {
+  background-color: green;
+  transform: scale(1.1);
+}
